@@ -1,0 +1,81 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Expand the script to include a ternary operation that checks if a user is an adult (18+) or a minor.
+        let age = prompt("Please enter your age: ");
+        console.log(age)
+        
+        if (isNaN(age) || age === "") {
+            console.log("Invalid input for age");
+        } else {
+            age = Number(age); 
+            age = (age >= 18) ? "Adult" : "Minor"; 
+            console.log(age);
+        }
+    </script>
+
+    <script>
+        // Write a JavaScript script that compares two variables using different comparison operators (==, ===, !=, !==, >, <, >=, <=) and prints the results.
+        let a,b;
+        a = 20, b = 30;
+        console.log(a==b);
+        console.log(a>b);
+        console.log(a<b);
+        console.log(a>=b);
+        console.log(a<=b);
+
+        a=20, b=20;
+        console.log(a==b);
+        console.log(a===b);
+        a="20",b=20;
+        console.log(a===b);
+        console.log(a!=b);
+        console.log(a!==b);
+        a="20",b="20";
+        console.log(a===b);
+        console.log(a!=b);
+
+        // Write a JavaScript script that uses the ternary operator to determine if a number is even or odd.
+
+    </script>
+    <script>
+        const c = prompt("enter the number");
+        console.log(c)
+        d=(c%2==0)?"Even":"Odd";
+        console.log(d);
+    </script>
+    
+    <script>
+        // Grade Classification: Declare a variable score and set it to a value between 0 and 100.
+        //  Use nested ternary operators to classify the score into grades: A (>= 90), B (>= 75), C (>= 60), D (>= 45), and F (below 45). Log the grade.
+        let n = prompt("Enter the marks: ");
+        console.log(n)
+        n=(n>=90)?"A":(n>=75)?"B":(n>=60)?"C":(n>=45)?"D":"F";
+        console.log(n);
+    </script>
+
+    <script>
+        //  Temperature Check: Declare a variable temperature and 
+        //  use nested ternary operators to categorize it as "Hot" (above 30), "Warm" (20-30), "Cool" (10-19), and "Cold" (below 10). Log the result.
+        let x = prompt("Enter value: ");
+        console.log(x)
+        x = (x>30)?"Hot":(x>=20 && x<=30)?"Warm":(x>=10 && x<20)?"Cool":"Cold";
+        console.log(x)
+    </script>
+    
+    <script>
+        
+    //  Age Group: Declare a variable age and 
+    //  use the ternary operator to classify the age into "Child" (0-12), "Teen" (13-19), "Adult" (20-64), and "Senior" (65 and above). Log the result. 
+    age=(age>=0 && age<13)?"Child":(age>=13 && age<20)?"Teen":(age>=20 && age <65)?"Adult":"Senior";
+    console.log(age);
+
+    </script>
+</body>
+</html>
